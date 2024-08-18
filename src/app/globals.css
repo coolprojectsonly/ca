@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.im {
+  width: 100%;
+  height: 250px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.prof {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: absolute;
+  left: -15%;
+  top: 20%;
+  z-index: 10;
+  /* border: 20px solid green; */
+}
+
+.prof img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.im img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background-color: red; */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80vw;
+  height: 70vh;
+  /* background-color: red; */
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  height: 500px;
+  /* background-color: #181818; */
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  background-color: #333;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-left: 20px;
+  /* color: lightblue; */
+}
+button {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid lightblue;
+  background-color: transparent;
+  margin-right: 5px;
+  color: lightblue;
+}
+button:hover {
+  background-color: red;
+  transition: 0.5s ease-in-out;
+}
+
+.text p {
+  margin: 20px;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 10px solid green; */
+  position: relative;
+  /* margin: 20px; */
+}
+
+.btn1:hover {
+  background-color: indigo;
+}
+
+.btn2:hover {
+  background-color: green;
+}
+
+@media screen and (min-width: 0px) and (max-width: 699px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1199px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* @media screen  and (min-width:1200px) and (max-width:1199px){
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+} */
